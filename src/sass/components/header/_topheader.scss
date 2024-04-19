@@ -1,9 +1,18 @@
+.top__header {
+  box-shadow: 0px 0px 8px 0px #33333333;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 100;
+}
 .top__header__content {
   display: grid;
   grid-template-columns: 0.7fr 5fr 2fr;
   padding: 10px 20px;
   width: 100%;
-  box-shadow: 0px 0px 8px 0px #33333333;
+
   font-family: Poppins, sans-serif;
   .menu {
     padding: 4px;

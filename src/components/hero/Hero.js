@@ -9,14 +9,14 @@ const Hero = () => {
     </li>
   ));
   return (
-    <section
-      className="hero"
-      style={{
-        background: `url(https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbookair-og-202402?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1707414684423) no-repeat center/cover`,
-      }}
-    >
+    <section className="hero">
       <div className="container">
-        <div className="hero__content">
+        <div
+          className="hero__content"
+          style={{
+            background: `url(https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbookair-og-202402?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1707414684423) no-repeat center/cover`,
+          }}
+        >
           <div className="text">
             <span>
               <h6>100%</h6> Organic Vegetables

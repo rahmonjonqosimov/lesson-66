@@ -39,7 +39,7 @@ const Pricing = () => {
     },
   ];
   let card = item?.map((el) => (
-    <div className="card">
+    <div key={el.id} className="card">
       <img src={el.url} alt={el.title} />
       <div className="text">
         <h4>{el.title}</h4>
