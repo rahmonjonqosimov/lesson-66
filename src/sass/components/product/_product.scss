@@ -1,0 +1,194 @@
+.product {
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    h2 {
+      font-family: Quicksand;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 38.4px;
+      text-align: left;
+      color: #253d4e;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 16px;
+      column-gap: 30px;
+      li {
+        font-family: Quicksand;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+        text-align: center;
+        color: #253d4e;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: #3bb77e;
+        }
+      }
+    }
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 24px;
+    row-gap: 30px;
+    margin: 43px 0 70px;
+    .card {
+      padding: 25px;
+      border: 1px solid #ececec;
+      border-radius: 15px;
+      transition: 0.3s;
+      &:hover {
+        box-shadow: 4px 4px 10px #0001;
+      }
+      img {
+        width: 100%;
+        height: 246px;
+        cursor: pointer;
+      }
+      .category {
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #adadad;
+      }
+      .title {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.47999998927116394px;
+        text-align: left;
+        color: #2b2b2d;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #b6b6b6;
+        svg {
+          color: #fdc040;
+          font-size: 18px;
+        }
+      }
+      .brand {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        color: #3bb77e;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .price {
+          font-family: Quicksand;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24px;
+          text-align: left;
+          color: #3bb77e;
+        }
+        button {
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          color: #fff;
+          background: #f53e32;
+          border: none;
+          border-radius: 4px;
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          text-align: left;
+          cursor: pointer;
+          svg {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1250px) {
+    .wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 1000px) {
+    .item {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  @media (max-width: 800px) {
+    .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 620px) {
+    .wrapper {
+      .card {
+        img {
+          height: 200px;
+        }
+        span {
+          gap: 10px;
+          justify-content: space-between;
+        }
+        div {
+          button {
+            padding: 8px 12px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    .wrapper {
+      .card {
+        img {
+          height: 130px;
+        }
+        span {
+          gap: 10px;
+          justify-content: space-between;
+        }
+        div {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          button {
+            padding: 8px 12px;
+          }
+        }
+      }
+    }
+  }
+}
+button {
+  transition: 0.3s;
+}
+button:active {
+  transform: scale(0.95);
+}

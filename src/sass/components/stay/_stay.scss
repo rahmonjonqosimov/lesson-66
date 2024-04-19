@@ -1,0 +1,113 @@
+.stay {
+  background: #d8f1e5;
+  padding: 80px;
+  &__content {
+    position: relative;
+    .text {
+      max-width: 529px;
+      h2 {
+        font-family: Quicksand;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: left;
+        color: #253d4e;
+      }
+      p {
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #7e7e7e;
+        margin: 20px 0 40px;
+      }
+      form {
+        position: relative;
+        input {
+          padding: 22px 58px;
+          border-radius: 50px;
+          background: #fff;
+          outline: none;
+          border: none;
+          width: 100%;
+        }
+        button {
+          padding: 18px 40px;
+          font-family: Quicksand;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0.5px;
+          text-align: center;
+          color: #fff;
+          background: #f53e32;
+          border-radius: 50px;
+          border: none;
+          position: absolute;
+          right: 0;
+          cursor: pointer;
+          top: 0;
+        }
+        ::placeholder {
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.2px;
+          text-align: left;
+          color: #838383;
+        }
+      }
+    }
+    .stay--bg {
+      position: absolute;
+      right: 0;
+      bottom: -80px;
+    }
+  }
+  @media (max-width: 1350px) {
+    padding-bottom: 0;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      .stay--bg {
+        position: static;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    padding: 40px 20px;
+    padding-bottom: 0;
+    &__content {
+      .stay--bg {
+        width: 100%;
+      }
+      .text {
+        h2 {
+          font-size: 30px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    &__content {
+      .text {
+        form {
+          input {
+            padding: 22px;
+          }
+          button {
+            padding: 18px;
+          }
+        }
+      }
+    }
+  }
+}
