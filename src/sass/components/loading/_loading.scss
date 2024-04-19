@@ -68,7 +68,10 @@
   }
   @media (max-width: 620px) {
     .wrapper {
+      column-gap: 8px;
+      row-gap: 14px;
       .card {
+        padding: 12px;
         &__image {
           height: 200px;
         }
@@ -79,7 +82,7 @@
     .wrapper {
       .card {
         height: 379px;
-        padding: 12px;
+
         &__image {
           height: 130px;
         }
